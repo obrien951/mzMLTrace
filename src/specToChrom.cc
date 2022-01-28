@@ -21,7 +21,7 @@
 
 
 
-namespace asaristc {
+namespace mzMLTrace {
 
 specToChrom::specToChrom() {
   current_spec_ = nullptr;
@@ -1090,4 +1090,4 @@ void specToChrom::reset() {
   current_spec_ = nullptr;
 }
 
-} // namespace asaristc
+} // namespace mzMLTrace

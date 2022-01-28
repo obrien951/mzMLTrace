@@ -2,7 +2,7 @@
 #include <iostream>
 #include <cstring>
 
-namespace asaristc {
+namespace mzMLTrace {
 
 spectrum::spectrum(int &n_pts, double &RT, int &id, int &offset) {
   n_pts_ = n_pts;
@@ -21,4 +21,4 @@ void spectrum::copy_values(int &count, double* mzs, double * intns) {
   std::memcpy( (char*) intns_, (char*) intns, count);
 }
 
-}// namespace asaristc
+}// namespace mzMLTrace

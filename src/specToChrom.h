@@ -17,7 +17,7 @@
 
 namespace py = pybind11;
 
-namespace asaristc {
+namespace mzMLTrace {
 
 struct basic_point {
   double mz_;
@@ -350,7 +350,7 @@ protected:
 
 }; // class specToChrom
 
-} // namespace asaristc
+} // namespace mzMLTrace
 
 #else
 #endif

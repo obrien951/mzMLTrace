@@ -3,7 +3,7 @@
 
 #include "base64.h"
 
-namespace asaristc {
+namespace mzMLTrace {
 
 b64_decoder::b64_decoder() { form_table(); }
 
@@ -83,4 +83,4 @@ void b64_decoder::decode_base64(char *bin_data, const char *base64_data,
   }
 }
 
-} // namespace asaristc
+} // namespace mzMLTrace

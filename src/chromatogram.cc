@@ -1,7 +1,7 @@
 #include "specToChrom.h"
 #include <iostream>
 
-namespace asaristc {
+namespace mzMLTrace {
 
 chromatogram::chromatogram(int &count, point &peak, double * mzs, double * rts, double * intns) {
   mz_ = peak.mz_;
@@ -76,4 +76,4 @@ void specToChrom::get_chrom(int &ind, py::list &mz_s, py::list &intnss,
   }
 } // specToChrom::get_chrom
 
-} // namespace asaristc
+} // namespace mzMLTrace

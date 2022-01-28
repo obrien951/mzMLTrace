@@ -2,7 +2,7 @@
 #define _ASARI_BASE64_
 #include <vector>
 
-namespace asaristc {
+namespace mzMLTrace {
 
 class b64_decoder {
 public:
@@ -165,7 +165,7 @@ protected:
   };
 };
 
-} // namespace asaristc
+} // namespace mzMLTrace
 
 #else
 #endif
