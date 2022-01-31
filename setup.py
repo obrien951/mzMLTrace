@@ -20,5 +20,6 @@ setup(
     author_email="joe@xialab.ca",
     url = "https://github.com/obrien951/mzMLTrace.git",
     license = license,
-    packages = find_packages(exclude=(exclusions))
+    packages = find_packages(where="src",exclude=(exclusions)),
+    package_dir={"":"src"}
 )
