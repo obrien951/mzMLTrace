@@ -42,6 +42,5 @@ Data can be extracted by the code as follows:
             INTS = [0.0 for i in range(count) ]
             k.get_chrom(i, mz, INTS, RT)
             mt_lists[ind].append(ext_MassTrace())
-            mt_lists[ind][i].__init2__(mz, RT, INTS)
 
 ```
