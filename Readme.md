@@ -25,14 +25,12 @@ Data can be extracted by the code as follows:
     mt_lists = []
     for mzml in mzmlFiles:
         chrommzml = mzml.removesuffix(".mzML")
-        chrommzml = chrommzml + "_chrom.mzML"
         if k.is_set():
             k.reset()
         k.set_filename(mzml)
         k.set_minimum_intensity(PARAMETERS["min_intensity_threshold"])
         k.readSpectra()
         k.findChromatograms()
-        k.writeChromatograms(chrommzml)
         mt_lists.append([])
         ind = len(mt_lists) - 1
         for i in range(k.get_nchrom()):
