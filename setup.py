@@ -21,5 +21,8 @@ setup(
     url = "https://github.com/obrien951/mzMLTrace.git",
     license = license,
     packages = find_packages(where="src",exclude=(exclusions)),
-    package_dir={"":"src"}
+    package_dir={"":"src"},
+    install_requires=[
+    'pybind11',
+    ],
 )
